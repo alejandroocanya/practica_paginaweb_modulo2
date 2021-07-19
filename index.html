@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio página web</title>
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,800;1,600&display=swap" rel="stylesheet">
+
+<script src="jquery-3.6.0.min.js"></script>
+<script  src = "js/smooth-scroll.polyfills.min.js" > </script >
+
+</head>
+
+<body>
+  <header>
+    <nav>
+
+          <a data-scroll href="#section1">Inicio</a>
+
+          <a data-scroll href="#section2">El Mundo</a>
+
+          <a data-scroll href="#section3">Personajes</a>
+          
+          <a data-scroll href="#section4">Contacto</a>
+ 
+    </div>
+    </nav> 
+     
+      <div id="section1">
+      <section class="textos-header">
+        <h1>DiscWorld</h1>
+        <h2>La saga de libros del autor Terry Pratchett</h2>
+      </section>
+        
+     </div>
+
+  </header>
+
+  <main>
+    <div id="section2">
+    <section class="contenedor"> 
+      <h2 class="titulo">El mundo</h2>
+      <div class="contenedor-mundo">
+        <img src="img/turtle.jpg" class="turtle">
+        <div class="contenido_texto">
+            <h3>Mundodisco</h3>
+            <p>En un mundo plano sostenido por cuatro elefantes impasibles -que se apoyan en la espalda de una tortuga gigante- habitan los estrafalarios personajes de esta novela: un hechicero avaro y torpe, un turista ingenuo cuyo fiero equipaje le sigue a todas partes sostenido por cientos de patitas, dragones que solo existen si se cree en ellos, gremios de ladrones y asesinos, espadas mágicas, la Muerte y, por supuesto, un extenso catálogo de magos y demonios...</p>
+
+             <h3>El Autor</h3>
+            <p>Terence David John "Terry" Pratchett (Beaconsfield, 28 de abril de 1948-Broad Chalke, 12 de marzo de 2015) fue un escritor británico de fantasía y ciencia ficción. Sus obras más conocidas corresponden a la serie del Mundodisco (Discworld); además escribió novelas juveniles, relatos cortos y colaboró en la redacción de guiones para las adaptaciones televisivas de sus novelas. Se han vendido más de 85 millones de ejemplares de sus libros en más de 35 idiomas</p>
+        </div>
+    </div>
+    </section>
+    </div>
+
+    <div id="section3">
+    <section class="Personajes">
+      <div class="contenedor">
+        <h2 class="titulo">Personajes</h2>
+        <div class="galeria-personajes">
+
+          <div class="imagen-personaje">
+            <img src="img/rincewind.jpg">
+          </div>
+
+          <div class="imagen-personaje">
+            <img src="img/muerte.jpg">
+          </div>
+
+          <div class="imagen-personaje">
+            <img src="img/ceravieja.jpg">
+          </div>
+
+          <div class="imagen-personaje">
+            <img src="img/vimes.jpg">
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+
+    <div id="section4">
+    <section class="Registro">
+    <div class="contenedor"> 
+      <h2 class="titulo">Contacto</h2>
+
+              <form action= "correo.php" method="post">
+               <label for ="nombre" >Escribe tu mensaje:</label>
+               <article>
+                   <textarea id="mensaje" name="mensaje" cols="100" rows="10">
+                  </textarea> 
+              </article>
+
+              <article>
+                  <input type="submit" value="Enviar">
+               <input type ="reset" value="Borrar"> 
+              </article>
+            </form>
+    </div>
+    </section>
+    </div>
+
+    <h2 class="titulo-final">&copy; Alejandro Ocaña Díez</h2>
+
+  </main>
+
+  <script>
+  var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
+
+</body>
+</html>
